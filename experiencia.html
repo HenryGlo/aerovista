@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La experiencia a bordo de AeroVista: gastronomia, entretenimiento y servicio premium.">
+  <meta name="author" content="Henry Gomez">
+  <title>Experiencia | AeroVista</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <style>
+    html{scroll-behavior:smooth}
+    [id]{scroll-margin-top:80px}
+    .titulo-seccion{display:inline-block;transition:color .4s ease,transform .4s ease}
+    .titulo-seccion:hover{transform:scale(1.06);color:var(--hover-color,#2C74B3)}
+    .img-marco{transition:transform .4s ease,box-shadow .4s ease,outline-color .4s ease;outline:5px solid transparent;outline-offset:-10px}
+    .img-marco:hover{transform:scale(1.02);outline-color:#F4C95D;box-shadow:0 1rem 2.5rem rgba(10,38,71,.35)}
+  </style>
+</head>
+<body style="font-family:'Inter',sans-serif;">
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#0A2647;">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html" style="font-family:'Poppins',sans-serif;">
+        <img src="img/logo.svg" alt="AeroVista" width="36" height="36">
+        Aero<span style="color:#F4C95D;">Vista</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+          <li class="nav-item"><a class="nav-link" href="flota.html">Flota</a></li>
+          <li class="nav-item"><a class="nav-link active" href="experiencia.html">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="tematica.html">Descripcion</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0"><a class="btn btn-warning btn-sm fw-semibold px-3" href="index.html#contacto">Reservar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 text-white text-center" style="background:linear-gradient(135deg,#0A2647,#205295);">
+    <div class="container">
+      <h1 class="fw-bold titulo-seccion" style="font-family:'Poppins',sans-serif;--hover-color:#F4C95D;">Experiencia a Bordo</h1>
+      <p class="lead text-white-50 mb-0">Cuidamos cada detalle para que tu vuelo sea tan memorable como el destino.</p>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&h=400&q=80" class="card-img-top img-marco" style="height:200px;object-fit:cover;" alt="Gastronomia a bordo">
+            <div class="card-body">
+              <h3 class="h5 fw-bold titulo-seccion" style="color:#0A2647;--hover-color:#2C74B3;">Gastronomia de altura</h3>
+              <p class="text-secondary small mb-0">Menus diseñados por chefs, con opciones vegetarianas, veganas y sin gluten en todas las clases.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=600&h=400&q=80" class="card-img-top img-marco" style="height:200px;object-fit:cover;" alt="Entretenimiento a bordo">
+            <div class="card-body">
+              <h3 class="h5 fw-bold titulo-seccion" style="color:#0A2647;--hover-color:#2C74B3;">Entretenimiento sin limites</h3>
+              <p class="text-secondary small mb-0">Pantallas individuales de alta definicion, catalogo multilingue y Wi-Fi de alta velocidad durante todo el vuelo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&h=400&q=80" class="card-img-top img-marco" style="height:200px;object-fit:cover;" alt="Servicio premium de AeroVista">
+            <div class="card-body">
+              <h3 class="h5 fw-bold titulo-seccion" style="color:#0A2647;--hover-color:#2C74B3;">Servicio Vista Premium</h3>
+              <p class="text-secondary small mb-0">Embarque prioritario, salas VIP, asientos cama y atencion totalmente personalizada de principio a fin.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pt-5 pb-4 text-white" style="background-color:#0A2647;">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="d-flex align-items-center gap-3 p-3 rounded mb-3" style="background-color:rgba(255,255,255,0.06);">
+            <img src="img/logo-uba.jpeg" alt="Universidad Bicentenaria de Aragua" width="56">
+            <small>
+              <strong>Universidad Bicentenaria de Aragua</strong><br>
+              Facultad de Ingenieria de Sistemas<br>
+              Catedra: Estructuras simples para la web
+            </small>
+          </div>
+          <p class="small text-white-50 mb-0">AeroVista es una aerolinea ficticia creada con fines academicos.</p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4 class="h6 mb-3">Navegacion</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a class="link-light text-decoration-none" href="index.html">Inicio</a></li>
+            <li class="mb-2"><a class="link-light text-decoration-none" href="destinos.html">Destinos</a></li>
+            <li class="mb-2"><a class="link-light text-decoration-none" href="flota.html">Flota</a></li>
+            <li class="mb-2"><a class="link-light text-decoration-none" href="experiencia.html">Experiencia</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h4 class="h6 mb-3">Autor</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2"><strong>Henry Gomez</strong></li>
+            <li class="mb-2">Cedula: V-30071779</li>
+            <li class="mb-2"><a class="link-light text-decoration-none" href="tematica.html">Descripcion del sitio</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
