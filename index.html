@@ -45,12 +45,14 @@
     .avion{position:absolute;top:46%;left:0;font-size:3rem;line-height:1;
       filter:drop-shadow(0 6px 10px rgba(10,38,71,.55));
       animation:volar 9s linear infinite;}
-    .avion::after{content:"";position:absolute;top:52%;right:98%;width:210px;height:5px;border-radius:5px;
+    /* El emoji del avion apunta en diagonal: lo rotamos 45deg para dejarlo derecho (horizontal) */
+    .avion-emoji{display:inline-block;transform:rotate(45deg);}
+    .avion::after{content:"";position:absolute;top:50%;right:98%;width:210px;height:5px;border-radius:5px;
       background:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.85) 100%);}
     @keyframes volar{
-      0%{transform:translateX(-30vw) translateY(0) rotate(-4deg)}
-      50%{transform:translateX(45vw) translateY(-28px) rotate(4deg)}
-      100%{transform:translateX(125vw) translateY(0) rotate(-4deg)}
+      0%{transform:translateX(-30vw) translateY(0)}
+      50%{transform:translateX(45vw) translateY(-24px)}
+      100%{transform:translateX(125vw) translateY(0)}
     }
 
     @media (prefers-reduced-motion:reduce){
@@ -204,7 +206,7 @@
     <section class="py-5 text-white" style="background-color:#0A2647;" id="ruta">
       <div class="container">
         <div class="text-center mx-auto mb-5" style="max-width:700px;">
-          <span class="badge rounded-pill mb-3" style="background-color:#144272;color:#F4C95D;letter-spacing:2px;">EN VUELO</span>
+          <div class="mb-3"><span class="badge rounded-pill" style="background-color:#144272;color:#F4C95D;letter-spacing:2px;">EN VUELO</span></div>
           <h2 class="fw-bold titulo-seccion" style="font-family:'Poppins',sans-serif;--hover-color:#F4C95D;">Sigue nuestra ruta por el cielo</h2>
           <p class="text-white-50">Cada dia nuestros aviones surcan el cielo conectando continentes. Observa como uno de ellos despega y cruza el horizonte de AeroVista.</p>
         </div>
@@ -215,7 +217,7 @@
         <div class="nube nube-2"></div>
         <div class="nube nube-3"></div>
         <div class="nube nube-4"></div>
-        <div class="avion">&#9992;&#65039;</div>
+        <div class="avion"><span class="avion-emoji">&#9992;&#65039;</span></div>
       </div>
     </section>
 
